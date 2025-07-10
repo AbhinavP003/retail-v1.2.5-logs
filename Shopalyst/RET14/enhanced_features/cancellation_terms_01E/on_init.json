@@ -1,0 +1,189 @@
+{
+    "context": {
+        "domain": "ONDC:RET14",
+        "country": "IND",
+        "city": "std:0124",
+        "action": "on_init",
+        "core_version": "1.2.5",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bpp_id": "preprod-pebblecart-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-pebblecart-bpp.shopalyst.com/pebblecart",
+        "transaction_id": "a68ff222-7c62-468f-8ad7-84ba5412f556",
+        "message_id": "257dfc3d-93ef-4e02-a915-0ca709331b54",
+        "timestamp": "2025-07-10T07:21:09.784Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-pebblecart-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "69b685813a63a8114c7c40e4b17dd08c"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "5041C0537916A32DBB468566368C246C_44241145561347_default",
+                    "fulfillment_id": "69b685813a63a8114c7c40e4b17dd08c_1",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "1599.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Pebble Frost Pro Jet black",
+                        "price": {
+                            "currency": "INR",
+                            "value": "1599.00"
+                        },
+                        "@ondc/org/item_id": "5041C0537916A32DBB468566368C246C_44241145561347_default",
+                        "item": {
+                            "price": {
+                                "currency": "INR",
+                                "value": "1599.00"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        },
+                        "@ondc/org/title_type": "item"
+                    },
+                    {
+                        "title": "Delivery Charges",
+                        "price": {
+                            "currency": "INR",
+                            "value": "0.00"
+                        },
+                        "@ondc/org/item_id": "69b685813a63a8114c7c40e4b17dd08c_1",
+                        "@ondc/org/title_type": "delivery"
+                    }
+                ],
+                "ttl": "PT15M"
+            },
+            "billing": {
+                "name": "Nirdosh Chauhan",
+                "address": {
+                    "name": "Nirdosh Chauhan",
+                    "building": "221 B",
+                    "locality": "Baker Steeet",
+                    "city": "Gurgaon",
+                    "state": "Haryana",
+                    "country": "India",
+                    "area_code": "122007"
+                },
+                "email": "nirdosh.chauhan@sequelstring.com",
+                "phone": "9876543210",
+                "created_at": "2025-07-10T07:21:08.668Z",
+                "updated_at": "2025-07-10T07:21:08.668Z",
+                "tax_number": "00ABCDE1234F1Z5"
+            },
+            "fulfillments": [
+                {
+                    "id": "69b685813a63a8114c7c40e4b17dd08c_1",
+                    "type": "Delivery",
+                    "provider_id": "69b685813a63a8114c7c40e4b17dd08c",
+                    "tracking": true,
+                    "end": {
+                        "location": {
+                            "gps": "28.4554726,77.0219019",
+                            "address": {
+                                "name": "Nirdosh Chauhan",
+                                "building": "221 B",
+                                "locality": "Baker Steeet",
+                                "city": "Gurgaon",
+                                "state": "Haryana",
+                                "country": "India",
+                                "area_code": "122007"
+                            }
+                        },
+                        "contact": {
+                            "phone": "9876543210"
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3",
+                "@ondc/org/settlement_details": [
+                    {
+                        "settlement_counterparty": "seller-app",
+                        "settlement_phase": "sale-amount",
+                        "settlement_type": "neft",
+                        "settlement_bank_account_no": "1112220032274181",
+                        "settlement_ifsc_code": "RAZR0000001",
+                        "beneficiary_name": "Kishor",
+                        "bank_name": "satebankofindia",
+                        "branch_name": "manikonda"
+                    }
+                ]
+            },
+            "tags": [
+                {
+                    "code": "bpp_terms",
+                    "list": [
+                        {
+                            "code": "np_type",
+                            "value": "ISN"
+                        },
+                        {
+                            "code": "tax_number",
+                            "value": "22AAAAA0000A1Z5"
+                        },
+                        {
+                            "code": "provider_tax_number",
+                            "value": "AAAAA0000A"
+                        }
+                    ]
+                }
+            ],
+            "cancellation_terms": [
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "Pending",
+                            "short_desc": "051"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "0.00"
+                    }
+                },
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "Packed",
+                            "short_desc": "004"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "10.00"
+                    }
+                },
+                {
+                    "fulfillment_state": {
+                        "descriptor": {
+                            "code": "Packed",
+                            "short_desc": "005"
+                        }
+                    },
+                    "cancellation_fee": {
+                        "percentage": "12.00",
+                        "amount": {
+                            "currency": "INR",
+                            "value": "8.00"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

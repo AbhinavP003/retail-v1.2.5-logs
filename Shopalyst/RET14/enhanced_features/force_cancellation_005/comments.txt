@@ -1,0 +1,4 @@
+pramaan test run ID : 1752126901467
+
+Both teh cancel requests were NACKEed from our side since the TAT wasnt breached.
+Cancellation reason code provider was of TAT breach (006)
