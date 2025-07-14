@@ -1,0 +1,40 @@
+{
+    "context": {
+        "domain": "ONDC:RET14",
+        "country": "IND",
+        "city": "std:0124",
+        "action": "cancel",
+        "core_version": "1.2.5",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bpp_id": "preprod-pebblecart-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-pebblecart-bpp.shopalyst.com/pebblecart",
+        "transaction_id": "4bc13681-dcb4-4a9e-9de2-87fab6d4b3f3",
+        "message_id": "8252ab81-3472-4511-a9bc-54f6419ee569",
+        "timestamp": "2025-07-10T08:44:44.291Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order_id": "SS1752137066621",
+        "cancellation_reason_id": "006",
+        "descriptor": {
+            "name": "fulfillment",
+            "short_desc": "69b685813a63a8114c7c40e4b17dd08c_1",
+            "tags": [
+                {
+                    "code": "params",
+                    "list": [
+                        {
+                            "code": "force",
+                            "value": "yes"
+                        },
+                        {
+                            "code": "ttl_response",
+                            "value": "PT1H"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

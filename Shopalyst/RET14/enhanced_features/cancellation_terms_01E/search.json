@@ -1,0 +1,46 @@
+{
+    "context": {
+        "domain": "ONDC:RET14",
+        "country": "IND",
+        "city": "std:0124",
+        "core_version": "1.2.5",
+        "action": "search",
+        "transaction_id": "a68ff222-7c62-468f-8ad7-84ba5412f556",
+        "message_id": "7411161f-e317-4cc4-be1a-e95ba16a5bd0",
+        "timestamp": "2025-07-10T07:20:28.863Z",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "intent": {
+            "fulfillment": {
+                "type": "Delivery"
+            },
+            "payment": {
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "3"
+            },
+            "tags": [
+                {
+                    "code": "catalog_full",
+                    "list": [
+                        {
+                            "code": "payload_type",
+                            "value": "inline"
+                        }
+                    ]
+                },
+                {
+                    "code": "bap_features",
+                    "list": [
+                        {
+                            "code": "01E",
+                            "value": "yes"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

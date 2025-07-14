@@ -1,0 +1,53 @@
+{
+    "context": {
+        "domain": "ONDC:RET14",
+        "country": "IND",
+        "city": "std:0124",
+        "core_version": "1.2.5",
+        "action": "select",
+        "transaction_id": "a68ff222-7c62-468f-8ad7-84ba5412f556",
+        "message_id": "8fe69ade-a2b7-46d6-ad81-58188e0cf0b5",
+        "timestamp": "2025-07-10T07:20:52.039Z",
+        "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+        "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+        "ttl": "PT30S",
+        "bpp_id": "preprod-pebblecart-bpp.shopalyst.com",
+        "bpp_uri": "https://preprod-pebblecart-bpp.shopalyst.com/pebblecart"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "preprod-pebblecart-bpp.shopalyst.com",
+                "locations": [
+                    {
+                        "id": "69b685813a63a8114c7c40e4b17dd08c"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "5041C0537916A32DBB468566368C246C_44241145561347_default",
+                    "location_id": "69b685813a63a8114c7c40e4b17dd08c",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "end": {
+                        "location": {
+                            "gps": "28.4554726,77.0219019",
+                            "address": {
+                                "area_code": "122007"
+                            }
+                        }
+                    }
+                }
+            ],
+            "payment": {
+                "type": "ON-ORDER"
+            }
+        }
+    }
+}
